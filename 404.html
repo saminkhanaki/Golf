@@ -1,19 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Redirecting to OceanBreezeGolf...</title>
-    
-    <link rel="canonical" href="https://oceanbreezegolf.com/"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
     
     <meta http-equiv="refresh" content="0; url=https://oceanbreezegolf.com/">
     
+    <link rel="canonical" href="https://oceanbreezegolf.com/"/>
+
     <script type="text/javascript">
-        // انتقال با جاوااسکریپت برای سرعت بیشتر در مرورگرها
-        window.location.replace("https://oceanbreezegolf.com/");
+        // اولویت دوم: جاوااسکریپت با مدیریت خطا
+        try {
+            window.location.replace("https://oceanbreezegolf.com/");
+        } catch (e) {
+            window.location.href = "https://oceanbreezegolf.com/";
+        }
     </script>
 </head>
 <body>
-    <p>You are being redirected to the new website. If you are not automatically transferred, please click here <a href="https://oceanbreezegolf.com/">Click Here</a>.</p>
+    <div style="text-align: center; margin-top: 50px; font-family: sans-serif;">
+        <p>Redirecting to our new website...</p>
+        <p>If you are not automatically transferred, 
+           <a href="https://oceanbreezegolf.com/" style="color: blue; text-decoration: underline;">click here</a>.
+        </p>
+    </div>
 </body>
 </html>
